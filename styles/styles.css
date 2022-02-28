@@ -1,0 +1,113 @@
+:root {
+    --couleur-titre: #D04F4F;
+    --couleur-ing: #3282F7;
+    --couleur-app: #68D9A4;
+    --couleur-ust: #ED6454;
+    --couleur-gris: #E7E7E7;
+    --couleur-back: #FEFEFE;
+}
+* {
+    font-family: 'Lato', 'sans-serif';
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html {
+    background-color: var(--couleur-back);
+}
+body {
+    margin: 3% 5%;
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    font-family: DM Sans;
+    font-size: 2.3em;
+    color: var(--couleur-titre);
+    margin-top: auto;
+}
+.r-rec {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+.zone-recette {
+    height: 69px;
+    width: 100%;
+    font-size: 1.3em;
+    padding-left: 2vw;
+    background-color: var(--couleur-gris);
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+.r-rec .zone-recette::placeholder {
+    opacity: 0.5;
+}
+.bouton-recette {
+    width: 70px;
+    border: none;
+    background-color: var(--couleur-gris);
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+.icone-recherche {
+    font-size: 2.5em;
+}
+.tags-display {
+    margin: 3vh 0;
+}
+.conteneur-rech-tags {
+    display: flex;
+    align-items: center;
+}
+.recherche {
+    width: 20%;
+    margin-right: 2vw;
+}
+.form-recherche-tags {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+.zone-tags {
+    height: 69px;
+    width: 70%;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    color: white;
+    padding-left: 1vw;
+    font-size: 1.3em;
+}
+.form-recherche-tags .zone-tags::placeholder {
+    color: #FFF;
+}
+.zone-ing {
+    background-color: var(--couleur-ing);
+}
+.zone-app {
+    background-color: var(--couleur-app);
+}
+.zone-ust {
+    background-color: var(--couleur-ust);
+}
+.bouton-tags {
+    width: 30%;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    color: white;
+    font-size: 1.3em;
+    cursor: pointer;
+}
+.bouton-ing {
+    background-color: var(--couleur-ing);
+}
+.bouton-app {
+    background-color: var(--couleur-app);
+}
+.bouton-ust {
+    background-color: var(--couleur-ust);
+}
